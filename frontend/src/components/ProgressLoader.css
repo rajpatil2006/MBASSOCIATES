@@ -1,0 +1,15 @@
+.progress-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    var(--gold-primary),
+    var(--gold-light),
+    var(--gold-primary)
+  );
+  z-index: 10000;
+  transition: width 0.3s ease, opacity 0.4s ease;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.8);
+}

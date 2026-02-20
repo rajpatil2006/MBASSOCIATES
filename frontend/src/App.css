@@ -1,0 +1,62 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--white);
+  color: var(--text-dark);
+}
+
+a {
+  color: var(--gold-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--gold-light);
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid var(--gold-primary);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--charcoal-dark);
+  color: var(--gold-primary);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+button:hover {
+  background-color: var(--gold-primary);
+  color: var(--charcoal-dark);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 2px solid var(--gold-primary);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--off-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold-primary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-light);
+}
+

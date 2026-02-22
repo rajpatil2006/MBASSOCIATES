@@ -1,5 +1,6 @@
-/* Version: 1.0.0 */
+/* Version: 1.0.1 */
 import { useState } from 'react'
+import { Link } from 'react-router-dom' // 1. Import Link from react-router-dom
 import './Header.css'
 
 export default function Header() {
@@ -13,7 +14,13 @@ export default function Header() {
     message: '',
   })
 
-  const menuItems = ['Home', 'About', 'Projects', 'Contact']
+  // 2. Updated menu logic to handle different paths
+  const menuItems = [
+    { name: 'Home', path: '/' },
+    { name: 'About', path: '/About' },
+    { name: 'Projects', path: '/projects' },
+    { name: 'Contact', path: '/contact' }
+  ]
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -32,8 +39,8 @@ export default function Header() {
     <>
       <header className="header">
         <div className="header-container">
-          {/* Logo Section */}
-          <div className="logo-section">
+          {/* Logo Section - Wrapped in Link to go Home */}
+          <Link to="/" className="logo-section" style={{ textDecoration: 'none' }}>
             <div className="logo-circle">
               <span className="logo-text">MB</span>
             </div>
@@ -41,19 +48,20 @@ export default function Header() {
               <h1 className="company-name">MB ASSOCIATES</h1>
               <p className="company-subtitle">REAL ESTATE</p>
             </div>
-          </div>
+          </Link>
 
           {/* Navigation Menu */}
           <nav className={`nav-menu ${menuOpen ? 'active' : ''}`}>
             {menuItems.map((item, index) => (
-              <a
+              /* 3. Replaced <a> with <Link> */
+              <Link
                 key={index}
-                href={`#${item.toLowerCase()}`}
+                to={item.path}
                 className="nav-link"
-                onClick={() => setMenuOpen(false)}
+                onClick={() => setMenuOpen(false)} // Closes mobile menu on click
               >
-                {item}
-              </a>
+                {item.name}
+              </Link>
             ))}
           </nav>
 

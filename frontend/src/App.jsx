@@ -8,6 +8,7 @@ import ProgressLoader from './components/ProgressLoader.jsx'
 import Header from './components/Header.jsx'
 import EnquireButton from './components/EnquireButton.jsx'
 import Home from './pages/Home.jsx'
+import About from './pages/About.jsx'
 
 function AppContent() {
   const [isLoading, setIsLoading] = useState(false)
@@ -28,6 +29,7 @@ function AppContent() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About/>} />
       </Routes>
       <EnquireButton />
     </div>

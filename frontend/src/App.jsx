@@ -9,7 +9,7 @@ import Header from './components/Header.jsx'
 import EnquireButton from './components/EnquireButton.jsx'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
-
+import Contact from './pages/Contact.jsx'
 function AppContent() {
   const [isLoading, setIsLoading] = useState(false)
   const location = useLocation()
@@ -30,6 +30,7 @@ function AppContent() {
       <Routes>
         <Route path="/" element={<Home />} />
           <Route path="/About" element={<About/>} />
+          <Route path="/Contact" element={<Contact/>} />
       </Routes>
       <EnquireButton />
     </div>

@@ -19,7 +19,7 @@ export default function Header() {
     { name: 'Home', path: '/' },
     { name: 'About', path: '/About' },
     { name: 'Projects', path: '/projects' },
-    { name: 'Contact', path: '/contact' }
+    { name: 'Contact', path: '/Contact' }
   ]
 
   const handleChange = (e) => {

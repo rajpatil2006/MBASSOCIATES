@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import './theme.css'
 import './App.css'
-import SplashScreen from './components/SplashScreen'
-import ProgressLoader from './components/ProgressLoader'
-import Header from './components/Header'
-import EnquireButton from './components/EnquireButton'
-import Home from './pages/Home'
+import SplashScreen from './components/SplashScreen.jsx'
+import ProgressLoader from './components/ProgressLoader.jsx'
+import Header from './components/Header.jsx'
+import EnquireButton from './components/EnquireButton.jsx'
+import Home from './pages/Home.jsx'
 
 function AppContent() {
   const [isLoading, setIsLoading] = useState(false)

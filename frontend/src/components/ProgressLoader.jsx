@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import './ProgressLoader.css';
+import { useEffect, useState } from 'react'
+import './ProgressLoader.css'
 
 export default function ProgressLoader({ isLoading }) {
   const [progress, setProgress] = useState(0);

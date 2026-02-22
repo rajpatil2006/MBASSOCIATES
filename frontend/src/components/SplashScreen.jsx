@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import './SplashScreen.css';
+import { useEffect, useState } from 'react'
+import './SplashScreen.css'
 
 export default function SplashScreen({ onComplete }) {
   const [isVisible, setIsVisible] = useState(true);

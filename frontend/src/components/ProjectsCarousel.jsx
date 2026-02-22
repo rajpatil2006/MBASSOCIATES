@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import ProjectCard from './ProjectCard'
+import ProjectCard from './ProjectCard.jsx'
 import './ProjectsCarousel.css'
 
 export default function ProjectsCarousel() {

@@ -502,7 +502,7 @@
   .info-title {
     font-size: 21px;
   }
-
+}
 @media (max-width: 992px) {
   .carousel-wrapper {
     height: 480px;

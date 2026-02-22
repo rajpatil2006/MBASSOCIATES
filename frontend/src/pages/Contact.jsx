@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Contact.css';
 
 const Contact = () => {
@@ -124,7 +125,45 @@ const Contact = () => {
           loading="lazy"
         ></iframe>
       </div>
+
+
+
+ {/* Footer (Consistent with Home page) */}
+      <footer className="footer">
+        <div className="section-container" style={{maxWidth: '1200px', margin: '0 auto'}}>
+          <div className="footer-content">
+            <div className="footer-section">
+              <h4>About MB Associates</h4>
+              <p>Leading the way in premium real estate and construction solutions.</p>
+            </div>
+            <div className="footer-section">
+              <h4>Navigation</h4>
+              <ul>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/projects">Projects</Link></li>
+                <li><Link to="/About">About</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
+              </ul>
+            </div>
+            <div className="footer-section">
+              <h4>Get In Touch</h4>
+              <p>📞 +91 XXXX XXXX XX</p>
+              <p>📧 info@mbassociates.com</p>
+            </div>
+          </div>
+          <div className="footer-bottom">
+            <p>&copy; 2026 MB Associates. Engineered for Excellence.</p>
+          </div>
+        </div>
+      </footer>
     </div>
+
+
+    
+    
+    
+
+
   );
 };
 

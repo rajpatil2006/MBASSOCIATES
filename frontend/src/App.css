@@ -3,6 +3,15 @@
   min-height: 100vh;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
+html, body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
 .app-container {
   width: 100%;
   min-height: 100vh;

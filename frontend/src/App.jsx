@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+import './theme.css'
+import './App.css'
 import SplashScreen from './components/SplashScreen'
 import ProgressLoader from './components/ProgressLoader'
 import Header from './components/Header'
 import EnquireButton from './components/EnquireButton'
-import './App.css'
-import './theme.css'
 import Home from './pages/Home'
 
 function AppContent() {

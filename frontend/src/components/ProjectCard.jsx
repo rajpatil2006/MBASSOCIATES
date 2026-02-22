@@ -1,3 +1,4 @@
+/* Version: 1.0.0 */
 import './ProjectCard.css'
 
 export default function ProjectCard({ project, index }) {

@@ -1,3 +1,4 @@
+/* Version: 1.0.0 */
 import { useEffect, useState } from 'react'
 import './ProgressLoader.css'
 

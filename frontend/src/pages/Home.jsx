@@ -1,3 +1,4 @@
+/* Version: 1.0.0 */
 import SearchFilter from '../components/SearchFilter.jsx'
 import ProjectStatusSlider from '../components/ProjectStatusSlider.jsx'
 import HeroCarousel from '../components/HeroCarousel.jsx'

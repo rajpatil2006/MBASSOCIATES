@@ -1,3 +1,4 @@
+/* Version: 1.0.0 */
 import { useState, useEffect } from 'react'
 import resproperty7 from '../assets/images/resproperty7.jpg'
 import resproperty8 from '../assets/images/resproperty8.jpg'

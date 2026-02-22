@@ -1,3 +1,4 @@
+/* Version: 1.0.0 */
 import { useState } from 'react'
 import './SearchFilter.css'
 

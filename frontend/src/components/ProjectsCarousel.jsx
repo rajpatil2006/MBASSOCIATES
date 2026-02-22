@@ -1,3 +1,4 @@
+/* Version: 1.0.0 */
 import { useState, useEffect } from 'react'
 import ProjectCard from './ProjectCard.jsx'
 import './ProjectsCarousel.css'

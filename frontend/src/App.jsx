@@ -1,3 +1,4 @@
+/* Version: 1.0.0 */
 import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import './theme.css'

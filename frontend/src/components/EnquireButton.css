@@ -186,12 +186,12 @@
 }
 
 .modal-close:hover {
-  color: var(--gold-primary);
+  color: var(--primary-blue);
   transform: rotate(90deg);
 }
 
 .modal-title {
-  color: var(--charcoal-dark);
+  color: var(--text-dark);
   text-align: center;
   margin-bottom: 30px;
   font-size: 24px;
@@ -220,8 +220,8 @@
 .form-input:focus,
 .form-textarea:focus {
   outline: none;
-  border-color: var(--gold-primary);
-  box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 10px rgba(74, 144, 184, 0.2);
   background-color: var(--white);
 }
 
@@ -233,8 +233,8 @@
 .submit-btn {
   width: 100%;
   padding: 14px;
-  background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-light) 100%);
-  color: var(--charcoal-dark);
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--sage-green) 100%);
+  color: var(--white);
   border: none;
   border-radius: 8px;
   font-size: 16px;
@@ -260,7 +260,7 @@
 
 .submit-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+  box-shadow: var(--shadow-lg);
 }
 
 .submit-btn:hover::before {

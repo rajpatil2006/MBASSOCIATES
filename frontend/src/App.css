@@ -8,38 +8,44 @@
   min-height: 100vh;
   background-color: var(--white);
   color: var(--text-dark);
+  animation: fadeIn 0.5s ease-out;
 }
 
 a {
-  color: var(--gold-primary);
+  color: var(--primary-blue);
   text-decoration: none;
+  transition: var(--transition);
 }
 
 a:hover {
-  color: var(--gold-light);
+  color: var(--sage-green);
+  text-shadow: 0 0 8px rgba(123, 168, 148, 0.2);
 }
 
 button {
   border-radius: 8px;
-  border: 1px solid var(--gold-primary);
+  border: 2px solid var(--primary-blue);
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: var(--charcoal-dark);
-  color: var(--gold-primary);
+  background-color: var(--white);
+  color: var(--primary-blue);
   cursor: pointer;
   transition: var(--transition);
+  box-shadow: var(--shadow-sm);
 }
 
 button:hover {
-  background-color: var(--gold-primary);
-  color: var(--charcoal-dark);
+  background-color: var(--primary-blue);
+  color: var(--white);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
 }
 
 button:focus,
 button:focus-visible {
-  outline: 2px solid var(--gold-primary);
+  outline: 2px solid var(--primary-blue);
 }
 
 /* Scrollbar Styling */
@@ -52,11 +58,11 @@ button:focus-visible {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--gold-primary);
+  background: var(--primary-blue);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--gold-light);
+  background: var(--sage-green);
 }
 

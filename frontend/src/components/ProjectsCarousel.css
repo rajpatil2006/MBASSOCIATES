@@ -10,7 +10,7 @@
 }
 
 .carousel-title {
-  color: var(--charcoal-dark);
+  color: var(--text-dark);
   text-align: center;
   font-size: 32px;
   margin-bottom: 50px;
@@ -46,8 +46,8 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-light) 100%);
-  color: var(--charcoal-dark);
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--sage-green) 100%);
+  color: var(--white);
   border: none;
   font-size: 24px;
   font-weight: bold;
@@ -57,12 +57,12 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+  box-shadow: var(--shadow-md);
 }
 
 .carousel-btn:hover {
   transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+  box-shadow: var(--shadow-lg);
 }
 
 .carousel-btn:active {
@@ -82,20 +82,20 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: rgba(212, 175, 55, 0.3);
+  background: rgba(74, 144, 184, 0.3);
   border: 2px solid transparent;
   cursor: pointer;
   transition: var(--transition);
 }
 
 .indicator:hover {
-  border-color: var(--gold-primary);
+  border-color: var(--primary-blue);
 }
 
 .indicator.active {
-  background: var(--gold-primary);
+  background: var(--primary-blue);
   transform: scale(1.3);
-  box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+  box-shadow: 0 0 10px rgba(74, 144, 184, 0.5);
 }
 
 /* Responsive Design */

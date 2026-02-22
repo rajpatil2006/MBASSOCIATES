@@ -1,17 +1,44 @@
-/* MBASSOCIATES Theme - Gold & Charcoal Black */
+/* MBASSOCIATES Theme - Fresh Light Colors with Subtle Accents */
 
 :root {
-  --gold-primary: #D4AF37;
-  --gold-light: #F0E68C;
-  --gold-dark: #B8860B;
-  --charcoal-dark: #2C2C2C;
-  --charcoal-medium: #3C3C3C;
-  --charcoal-light: #4A4A4A;
+  /* Primary Accent Colors - Very Light & Fresh */
+  --primary-blue: #5BA3D0;
+  --primary-blue-light: #E1F0FF;
+  --primary-blue-faint: #F3F8FE;
+  
+  /* Secondary Accent - Fresh Mint */
+  --sage-green: #6BB899;
+  --sage-green-light: #E8F5F0;
+  --sage-green-faint: #F5FBFA;
+  
+  /* Tertiary Accent - Fresh Peach */
+  --rose-accent: #D4A5A1;
+  --rose-accent-light: #FFF0ED;
+  --rose-accent-faint: #FFFBFA;
+  
+  /* Accent for highlights */
+  --accent-coral: #FFB3A7;
+  --accent-lavender: #D9C9E8;
+  
+  /* Base Colors */
   --white: #FFFFFF;
-  --off-white: #F5F5F5;
-  --text-dark: #1F1F1F;
-  --text-light: #666666;
-  --border-light: #E0E0E0;
+  --off-white: #FCFCFC;
+  --light-gray: #F5F5F5;
+  --gray-medium: #E0E0E0;
+  --gray-light: #F0F0F0;
+  
+  /* Text Colors - Removed blacks */
+  --text-dark: #3A4A52;
+  --text-medium: #6B7577;
+  --text-light: #9BA3A8;
+  
+  /* Shadows - Softer */
+  --shadow-sm: 0 2px 6px rgba(91, 163, 208, 0.05);
+  --shadow-md: 0 4px 12px rgba(91, 163, 208, 0.08);
+  --shadow-lg: 0 8px 20px rgba(91, 163, 208, 0.1);
+  --shadow-hover: 0 12px 28px rgba(107, 184, 153, 0.12);
+  
+  --border-light: #F0F0F0;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -126,5 +153,46 @@ html {
   }
   50% {
     opacity: 0.7;
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(91, 163, 208, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(91, 163, 208, 0.4);
+  }
+}
+
+@keyframes cardHover {
+  0% {
+    transform: translateY(-8px) scale(1);
+  }
+  50% {
+    box-shadow: 0 12px 30px rgba(91, 163, 208, 0.2);
+  }
+  100% {
+    transform: translateY(-8px) scale(1.02);
+  }
+}
+
+@keyframes containerIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes subtleBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
   }
 }

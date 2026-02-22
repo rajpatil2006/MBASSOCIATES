@@ -1,5 +1,5 @@
 .project-status-slider {
-  background: linear-gradient(135deg, rgba(44, 44, 44, 0.5) 0%, rgba(60, 60, 60, 0.3) 100%);
+  background: linear-gradient(135deg, var(--primary-blue-faint) 0%, var(--sage-green-light) 100%);
   padding: 80px 20px;
   position: relative;
   overflow: hidden;
@@ -34,16 +34,16 @@
 
 .slider-title {
   font-size: 48px;
-  color: var(--white);
+  color: var(--text-dark);
   margin-bottom: 12px;
   font-weight: 900;
   letter-spacing: 2px;
-  text-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 3px 15px rgba(74, 144, 184, 0.1);
 }
 
 .slider-subtitle {
   font-size: 16px;
-  color: var(--gold-light);
+  color: var(--primary-blue);
   letter-spacing: 0.8px;
   font-weight: 500;
 }
@@ -61,9 +61,9 @@
 .tab-btn {
   position: relative;
   padding: 12px 28px;
-  border: 2px solid rgba(212, 175, 55, 0.4);
+  border: 2px solid rgba(74, 144, 184, 0.4);
   background: transparent;
-  color: var(--gold-light);
+  color: var(--primary-blue);
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1.2px;
@@ -82,16 +82,16 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, var(--gold-primary), var(--gold-light));
+  background: linear-gradient(90deg, var(--primary-blue), var(--sage-green));
   transition: left 0.4s ease;
   z-index: -1;
 }
 
 .tab-btn:hover {
   transform: translateY(-3px);
-  border-color: var(--gold-primary);
-  color: var(--charcoal-dark);
-  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
+  border-color: var(--primary-blue);
+  color: var(--white);
+  box-shadow: var(--shadow-lg);
 }
 
 .tab-btn:hover::before {
@@ -99,10 +99,10 @@
 }
 
 .tab-btn.active {
-  background: linear-gradient(135deg, var(--gold-primary), var(--gold-light));
-  color: var(--charcoal-dark);
-  border-color: var(--gold-primary);
-  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.45);
+  background: linear-gradient(135deg, var(--primary-blue), var(--sage-green));
+  color: var(--white);
+  border-color: var(--primary-blue);
+  box-shadow: var(--shadow-hover);
   transform: translateY(-5px);
   animation: buttonPulse 0.6s ease-out;
 }
@@ -113,7 +113,7 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background: var(--gold-primary);
+  background: var(--primary-blue);
   transform: scaleX(0);
   transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
@@ -124,10 +124,10 @@
 
 @keyframes buttonPulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7);
+    box-shadow: 0 0 0 0 rgba(74, 144, 184, 0.7);
   }
   100% {
-    box-shadow: 0 8px 25px rgba(212, 175, 55, 0);
+    box-shadow: 0 8px 25px rgba(74, 144, 184, 0);
   }
 }
 
@@ -136,6 +136,7 @@
   position: relative;
   perspective: 1000px;
   margin-bottom: 50px;
+  padding: 0 45px;
 }
 
 .projects-slider {
@@ -189,7 +190,7 @@
   height: 100%;
   overflow: hidden;
   border-radius: 12px 0 0 12px;
-  background: var(--charcoal-dark);
+  background: var(--off-white);
 }
 
 .card-image {
@@ -222,7 +223,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, transparent 0%, rgba(44, 44, 44, 0.35) 100%);
+  background: linear-gradient(135deg, transparent 0%, rgba(91, 163, 208, 0.08) 100%);
   z-index: 2;
 }
 
@@ -233,7 +234,7 @@
   justify-content: space-between;
   width: 40%;
   padding: 50px 45px;
-  background: linear-gradient(135deg, #2C2C2C 0%, #3C3C3C 100%);
+  background: linear-gradient(135deg, var(--white) 0%, var(--off-white) 100%);
   border-radius: 0 12px 12px 0;
   animation: contentSlideIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0.15s both;
 }
@@ -251,17 +252,17 @@
 
 .project-title {
   font-size: 32px;
-  color: var(--white);
+  color: var(--text-dark);
   margin-bottom: 10px;
   font-weight: 900;
   letter-spacing: 1.2px;
   line-height: 1.2;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 2px 10px rgba(74, 144, 184, 0.1);
 }
 
 .project-location {
   font-size: 15px;
-  color: var(--gold-light);
+  color: var(--primary-blue);
   margin-bottom: 30px;
   letter-spacing: 0.6px;
   font-weight: 500;
@@ -273,7 +274,7 @@
   gap: 25px;
   margin-bottom: 35px;
   padding-bottom: 25px;
-  border-bottom: 2px solid rgba(212, 175, 55, 0.2);
+  border-bottom: 2px solid rgba(74, 144, 184, 0.15);
 }
 
 .stat {
@@ -284,7 +285,7 @@
 
 .stat-label {
   font-size: 11px;
-  color: var(--gold-light);
+  color: var(--primary-blue);
   font-weight: 800;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -293,16 +294,16 @@
 
 .stat-value {
   font-size: 20px;
-  color: var(--gold-primary);
+  color: var(--rose-accent);
   font-weight: 900;
   letter-spacing: 0.8px;
-  text-shadow: 0 2px 8px rgba(212, 175, 55, 0.25);
+  text-shadow: 0 2px 8px rgba(184, 134, 156, 0.2);
 }
 
 .stat-divider {
   width: 2px;
   height: 30px;
-  background: linear-gradient(180deg, transparent, rgba(212, 175, 55, 0.3), transparent);
+  background: linear-gradient(180deg, transparent, rgba(74, 144, 184, 0.2), transparent);
 }
 
 /* Explore Button */
@@ -311,8 +312,8 @@
   align-items: center;
   gap: 10px;
   padding: 14px 32px;
-  background: linear-gradient(135deg, var(--gold-primary), var(--gold-light));
-  color: var(--charcoal-dark);
+  background: linear-gradient(135deg, var(--primary-blue), var(--sage-green));
+  color: var(--white);
   border: none;
   border-radius: 6px;
   font-size: 14px;
@@ -321,7 +322,7 @@
   transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
   letter-spacing: 0.8px;
   text-transform: uppercase;
-  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.35);
+  box-shadow: var(--shadow-lg);
   position: relative;
   overflow: hidden;
   will-change: transform, box-shadow;
@@ -347,7 +348,7 @@
 
 .explore-btn:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 35px rgba(212, 175, 55, 0.5);
+  box-shadow: var(--shadow-hover);
 }
 
 .explore-btn:hover::before {
@@ -367,13 +368,13 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
-  border: 2px solid rgba(212, 175, 55, 0.5);
-  background: rgba(44, 44, 44, 0.7);
-  color: var(--gold-light);
-  font-size: 28px;
+  border: 1.5px solid var(--primary-blue);
+  background: transparent;
+  color: var(--primary-blue);
+  font-size: 16px;
   cursor: pointer;
   transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
   z-index: 20;
@@ -383,54 +384,57 @@
   font-weight: bold;
   will-change: transform, background, box-shadow;
   backdrop-filter: blur(5px);
+  opacity: 0.7;
 }
 
 .nav-arrow:hover {
-  background: linear-gradient(135deg, var(--gold-primary), var(--gold-light));
-  color: var(--charcoal-dark);
-  border-color: var(--gold-primary);
-  transform: translateY(-50%) scale(1.1);
-  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+  background: var(--primary-blue);
+  color: var(--white);
+  border-color: var(--primary-blue);
+  transform: translateY(-50%) scale(1.15);
+  opacity: 1;
+  box-shadow: 0 4px 12px rgba(91, 163, 208, 0.25);
 }
 
 .nav-arrow.prev {
-  left: -70px;
+  left: 0;
 }
 
 .nav-arrow.next {
-  right: -70px;
+  right: 0;
 }
 
-/* Slide Indicators */
+/* Slide Indicators - Dash Style */
 .slide-indicators {
   display: flex;
   justify-content: center;
-  gap: 12px;
-  margin-top: 30px;
+  align-items: center;
+  gap: 5px;
+  margin-top: 40px;
   flex-wrap: wrap;
+  animation: slideInUp 0.6s ease-out 0.3s both;
 }
 
 .indicator {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: 2px solid rgba(212, 175, 55, 0.4);
-  background: transparent;
+  width: 4px;
+  height: 2px;
+  border-radius: 0.25px;
+  background: rgba(91, 163, 208, 0.2);
   cursor: pointer;
   transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
-  will-change: transform, background, box-shadow;
+  will-change: width, background;
+  border: none;
 }
 
 .indicator:hover {
-  border-color: var(--gold-primary);
-  transform: scale(1.3);
+  background: rgba(91, 163, 208, 0.5);
+  width: 8px;
 }
 
 .indicator.active {
-  background: var(--gold-primary);
-  border-color: var(--gold-primary);
-  transform: scale(1.4);
-  box-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
+  background: var(--primary-blue);
+  width: 12px;
+  box-shadow: 0 0 6px rgba(91, 163, 208, 0.25);
 }
 
 /* Project Counter */
@@ -442,7 +446,7 @@
 
 .counter-text {
   font-size: 14px;
-  color: var(--gold-light);
+  color: var(--text-medium);
   letter-spacing: 1px;
   font-weight: 600;
   text-transform: uppercase;
@@ -450,6 +454,10 @@
 
 /* Responsive Design */
 @media (max-width: 1200px) {
+  .slider-wrapper {
+    padding: 0 40px;
+  }
+
   .slider-title {
     font-size: 42px;
   }
@@ -467,11 +475,21 @@
     padding: 13px 28px;
     font-size: 13px;
   }
+
+  .nav-arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 992px) {
   .project-status-slider {
     padding: 60px 20px;
+  }
+
+  .slider-wrapper {
+    padding: 0 35px;
   }
 
   .slider-header {
@@ -515,23 +533,19 @@
   }
 
   .nav-arrow {
-    width: 44px;
-    height: 44px;
-    font-size: 24px;
-  }
-
-  .nav-arrow.prev {
-    left: -55px;
-  }
-
-  .nav-arrow.next {
-    right: -55px;
+    width: 28px;
+    height: 28px;
+    font-size: 13px;
   }
 }
 
 @media (max-width: 768px) {
   .project-status-slider {
     padding: 50px 15px;
+  }
+
+  .slider-wrapper {
+    padding: 0 30px;
   }
 
   .slider-header {
@@ -601,17 +615,9 @@
   }
 
   .nav-arrow {
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-  }
-
-  .nav-arrow.prev {
-    left: 5px;
-  }
-
-  .nav-arrow.next {
-    right: 5px;
+    width: 26px;
+    height: 26px;
+    font-size: 12px;
   }
 }
 

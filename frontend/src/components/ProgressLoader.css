@@ -5,11 +5,11 @@
   height: 4px;
   background: linear-gradient(
     90deg,
-    var(--gold-primary),
-    var(--gold-light),
-    var(--gold-primary)
+    var(--primary-blue),
+    var(--sage-green),
+    var(--primary-blue)
   );
   z-index: 10000;
   transition: width 0.3s ease, opacity 0.4s ease;
-  box-shadow: 0 0 15px rgba(212, 175, 55, 0.8);
+  box-shadow: 0 0 15px rgba(74, 144, 184, 0.8);
 }

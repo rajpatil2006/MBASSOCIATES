@@ -1,6 +1,6 @@
 .search-section {
   margin-top: 0;
-  background: linear-gradient(135deg, var(--charcoal-dark) 0%, var(--charcoal-medium) 100%);
+  background: linear-gradient(135deg, var(--primary-blue-light) 0%, var(--sage-green-light) 100%);
   padding: 50px 20px;
   animation: fadeIn 0.8s ease-out 0.3s both;
 }
@@ -11,7 +11,7 @@
 }
 
 .search-title {
-  color: var(--gold-primary);
+  color: var(--primary-blue);
   text-align: center;
   font-size: 32px;
   margin-bottom: 40px;
@@ -41,7 +41,7 @@
   width: 100%;
   height: 100%;
   padding: 12px 40px 12px 16px;
-  border: 2px solid var(--gold-primary);
+  border: 2px solid var(--primary-blue);
   background-color: var(--white);
   color: var(--text-dark);
   border-radius: 8px;
@@ -51,8 +51,8 @@
 }
 
 .search-input:focus {
-  border-color: var(--gold-light);
-  box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+  border-color: var(--sage-green);
+  box-shadow: 0 0 15px rgba(74, 144, 184, 0.2);
 }
 
 .search-input::placeholder {
@@ -71,7 +71,7 @@
 .search-select {
   height: 50px;
   padding: 8px 12px;
-  border: 2px solid var(--gold-primary);
+  border: 2px solid var(--primary-blue);
   background-color: var(--white);
   color: var(--text-dark);
   border-radius: 8px;
@@ -80,7 +80,7 @@
   transition: var(--transition);
   outline: none;
   appearance: none;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D4AF37' stroke-width='2'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234A90B8' stroke-width='2'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 8px center;
   background-size: 20px;
@@ -89,15 +89,15 @@
 
 .search-select:hover,
 .search-select:focus {
-  border-color: var(--gold-light);
-  box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+  border-color: var(--sage-green);
+  box-shadow: 0 0 15px rgba(74, 144, 184, 0.2);
 }
 
 .search-btn {
   height: 50px;
   padding: 0 30px;
-  background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-light) 100%);
-  color: var(--charcoal-dark);
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--sage-green) 100%);
+  color: var(--white);
   border: none;
   border-radius: 8px;
   font-size: 14px;

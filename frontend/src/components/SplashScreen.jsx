@@ -8,7 +8,7 @@ export default function SplashScreen({ onComplete }) {
     const timer = setTimeout(() => {
       setIsVisible(false);
       onComplete();
-    }, 3000); // Display splash for 3 seconds
+    }, 3500); // Display splash for 3.5 seconds (allows full animation sequence: logo 0-1s, brand 0.8-1.6s, progress 1.2-3.4s)
 
     return () => clearTimeout(timer);
   }, [onComplete]);

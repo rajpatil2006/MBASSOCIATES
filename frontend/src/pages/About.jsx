@@ -53,6 +53,46 @@ const About = () => {
         </div>
       </section>
 
+
+
+
+{/* --- Founder & Owner Section --- */}
+      <section className="founder-section">
+        <div className="founder-card">
+          <div className="founder-image-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop" 
+              alt="M.B. Chaudhari - Founder" 
+              className="founder-img"
+            />
+            <div className="founder-experience-badge">
+              <span>30+ Years</span>
+              <p>Experience</p>
+            </div>
+          </div>
+          
+          <div className="founder-info">
+            <h4 className="founder-label">Principal Architect & Founder</h4>
+            <h2 className="founder-name">M.B. Chaudhari</h2>
+            <div className="founder-divider"></div>
+            <p className="founder-description">
+              M.B. Chaudhari is the visionary founder behind MB Associates. With over three decades 
+              of expertise in the Pune real estate landscape, he has led the firm with a commitment 
+              to structural integrity and architectural innovation. Under his leadership, the firm 
+              has successfully delivered numerous landmarks, blending modern technology with 
+              timeless engineering principles.
+            </p>
+            <div className="founder-credentials">
+              <span>Council of Architecture (COA) Registered</span>
+              <span>IIA Member</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
       {/* Interactive Core Values */}
       <section className="values-section">
         <div className="section-container" style={{maxWidth: '1200px', margin: '0 auto'}}>

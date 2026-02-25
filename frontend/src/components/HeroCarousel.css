@@ -101,14 +101,8 @@
     rgba(107, 184, 153, 0.1) 100%
   );
   z-index: 2;
+}
 
-  /* Fix for Safari and code editors */
-  -webkit-backdrop-filter: blur(1px); 
-  backdrop-filter: blur(1px);
-  
-  /* Ensures the browser handles the layer efficiently */
-  will-change: backdrop-filter;
-}git
 /* Slide Content - Independent from Image Transition */
 .slide-content {
   position: absolute;

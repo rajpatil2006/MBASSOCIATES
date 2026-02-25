@@ -3,7 +3,7 @@ import './ProjectCard.css'
 
 export default function ProjectCard({ project, index }) {
   return (
-    <div className="project-card" style={{ animationDelay: `${index * 0.1}s` }}>
+    <div className="carousel-project-card" style={{ animationDelay: `${index * 0.1}s` }}>
       <div className="project-image-container">
         <div
           className="project-image"

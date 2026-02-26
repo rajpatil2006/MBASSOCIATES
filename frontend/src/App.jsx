@@ -11,7 +11,11 @@ import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx'
 import Project from './pages/Project.jsx'
+import Login from './pages/Login';
+import Dashboard from './pages/Dashboard';
 function AppContent() {
+const [userRole, setUserRole] = useState(null);
+
   const [isLoading, setIsLoading] = useState(false)
   const location = useLocation()
 
@@ -33,6 +37,11 @@ function AppContent() {
           <Route path="/About" element={<About/>} />
           <Route path="/Contact" element={<Contact/>} />
            <Route path="/Project" element={<Project/>} />
+
+          <Route path="/login" element={<Login setUserRole={setUserRole} />} />
+      <Route path="/dashboard" element={<Dashboard userRole={userRole} setUserRole={setUserRole} />} />
+
+
       </Routes>
       <EnquireButton />
     </div>

@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom' // 1. Import Link from react-router-dom
 import './Header.css'
 
-export default function Header() {
+export default function Header(userRole) {
   const [menuOpen, setMenuOpen] = useState(false)
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [formData, setFormData] = useState({
@@ -50,6 +50,9 @@ export default function Header() {
             </div>
           </Link>
 
+
+
+
           {/* Navigation Menu */}
           <nav className={`nav-menu ${menuOpen ? 'active' : ''}`}>
             {menuItems.map((item, index) => (
@@ -63,7 +66,27 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
+
+            <Link 
+              to={userRole ? "/dashboard" : "/login"} 
+              className="nav-link portal-link"
+              onClick={() => setMenuOpen(false)}
+              style={{ 
+                fontWeight: 'bold', 
+                color: '#5ba3d0', /* Primary Blue */
+                borderBottom: '2px solid #5ba3d0'
+              }}
+            >
+              {userRole ? "Dashboard" : "Portal Login"}
+            </Link>
+          
+
+
           </nav>
+
+
+
+
 
           {/* Enquire Now Button */}
           <button

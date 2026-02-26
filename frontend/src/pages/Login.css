@@ -1,0 +1,43 @@
+/* --- NEW WRAPPER LAYOUT --- */
+.login-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Forces the whole page to be at least screen height */
+  background-color: #f8fafc;
+}
+
+.login-content {
+  flex-grow: 1; /* This is the magic! It pushes the footer to the bottom */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 120px; /* Leaves room for your fixed Header */
+  padding-bottom: 40px;
+}
+
+/* --- EXISTING LOGIN BOX STYLES --- */
+.login-container {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-header h2 { color: #1e293b; margin-bottom: 5px; }
+.login-header p { color: #64748b; font-size: 0.9rem; margin-bottom: 30px; }
+
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; margin-bottom: 8px; font-weight: 600; color: #334155; font-size: 0.9rem;}
+.form-group input, .form-group select {
+  width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem;
+}
+
+.demo-group { background: #f1f5f9; padding: 15px; border-radius: 8px; border: 1px dashed #cbd5e1;}
+
+.login-btn {
+  width: 100%; padding: 12px; background: #5ba3d0; color: white; border: none;
+  border-radius: 6px; font-weight: bold; cursor: pointer; transition: 0.3s;
+}
+.login-btn:hover { background: #4a8cb8; }

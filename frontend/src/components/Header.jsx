@@ -67,19 +67,14 @@ export default function Header(userRole) {
               </Link>
             ))}
 
+        {/* NEW: Dynamic Role-Based Portal Link (Inline styles removed) */}
             <Link 
               to={userRole ? "/dashboard" : "/login"} 
               className="nav-link portal-link"
               onClick={() => setMenuOpen(false)}
-              style={{ 
-                fontWeight: 'bold', 
-                color: '#5ba3d0', /* Primary Blue */
-                borderBottom: '2px solid #5ba3d0'
-              }}
             >
               {userRole ? "Dashboard" : "Portal Login"}
             </Link>
-          
 
 
           </nav>
